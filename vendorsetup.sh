@@ -18,6 +18,9 @@
 # In particular, you can add lunch options with the add_lunch_combo
 # function: add_lunch_combo generic-eng
 
+# Patch the source first
+sh device/samsung/j1pop3g/patches/apply.sh
+
 for i in eng user userdebug; do
-add_lunch_combo cm_j1pop3g-${i};
+add_lunch_combo lineage_j1pop3g-${i};
 done

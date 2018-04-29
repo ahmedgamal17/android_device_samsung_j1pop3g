@@ -11,7 +11,7 @@ for FILE in `cat proprietary-files.txt | grep -v ^# | grep -v ^$`; do
     if [ ! -d $BASE/$DIR ]; then
         mkdir -p $BASE/$DIR
     fi
-    cp ../../../../stock\ J110H/$FILE $BASE/$FILE
+    cp ../../../../j110h/stock/$FILE $BASE/$FILE
     echo "$FILE pulled"
 done
 
