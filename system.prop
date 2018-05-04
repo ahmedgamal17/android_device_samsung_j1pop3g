@@ -1,5 +1,5 @@
 #
-# system.prop for core33g
+# system.prop for j1pop3g
 #
 ro.sf.lcd_density=240
 ro.sf.lcd_width=36
@@ -88,4 +88,3 @@ ro.ril.gprsclass=10
 ril.sim2.present=1
 persist.radio.multisim.config=dsds
 ro.telephony.ril_class=SamsungSPRDRIL
-
