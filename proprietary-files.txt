@@ -1,6 +1,7 @@
 # Un-categorized
 bin/engpc
 lib/libatparser.so
+xbin/zram.sh
 
 # GPS
 etc/gps.conf
