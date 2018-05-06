@@ -65,7 +65,7 @@ BOARD_WPA_SUPPLICANT_DRIVER := NL80211
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
 BOARD_HOSTAPD_DRIVER := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_bcmdhd
-WIFI_DRIVER_FW_PATH_AP := "/system/etc/wifi/WIFI_DRIVER_FW_PATH_AP := "/system/etc/wifi/p2p_supplicant_overlay.conf"
+WIFI_DRIVER_FW_PATH_AP := "/system/etc/wifi/p2p_supplicant_overlay.conf"
 WIFI_DRIVER_FW_PATH_AP := "/system/etc/wifi/wpa_supplicant.conf"
 WIFI_DRIVER_FW_PATH_AP := "/system/etc/wifi/wpa_supplicant_overlay.conf"
 WIFI_DRIVER_FW_PATH_AP := "/system/etc/wifi/mcs.ini"
