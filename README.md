@@ -1,7 +1,7 @@
 Copyright 2014 - The CyanogenMod Project
 ===================================
 
-Device configuration for Samsung Galaxy Core Prime SM-J110H (j1pop3g)
+Device configuration for Samsung Galaxy j1 ace SM-J110H (j1pop3g)
 
 		instruction how to build
 
