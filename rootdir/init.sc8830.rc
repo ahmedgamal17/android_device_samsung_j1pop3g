@@ -371,18 +371,18 @@ service slog /system/bin/slog -t
     group system shell radio log sdcard_r sdcard_rw
 
 service refnotify_td /system/bin/refnotify -t 0
-    class core
+    class main
     user system
-    group system
+	group system
     disabled
 
 service refnotify_w /system/bin/refnotify -t 1
-    class core
+    class main
     user system
     group system
 
 service refnotify_l /system/bin/refnotify -t 2
-    class core
+    class main
     user system
     group system
     disabled

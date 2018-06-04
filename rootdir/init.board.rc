@@ -6,7 +6,6 @@ on post-fs
 
 on boot
     chmod 660 /dev/ttyS0
-
     chown system system /sys/class/switch/sprd_simdet/state
     chmod 660 /proc/bluetooth/sleep/proto
     chmod 660 /sys/class/rfkill/rfkill0/state
