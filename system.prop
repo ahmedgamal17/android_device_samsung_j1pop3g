@@ -1,9 +1,9 @@
 #
-# system.prop for core33g
+# system.prop for j1pop3g
 #
 ro.sf.lcd_density=240
 ro.sf.lcd_width=36
-ro.sf.lcd_height=45
+ro.sf.lcd_height=54
 ro.opengles.version=131072
 ro.product.hardware=PIKEAYOUNG2DTV_V1.0.0
 
