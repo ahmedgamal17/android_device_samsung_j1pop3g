@@ -151,9 +151,9 @@ MALLOC_IMPL := dlmalloc
 PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
 
 # Enable dex-preoptimization to speed up the first boot sequence
-WITH_DEXPREOPT := true
+WITH_DEXPREOPT := false
 #WITH_DEXPREOPT_BOOT_IMG_ONLY := true
-WITH_DEXPREOPT_PIC := true
+WITH_DEXPREOPT_PIC := false
 WITH_DEXPREOPT_COMP := false
 
 # Charger
