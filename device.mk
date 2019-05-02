@@ -34,20 +34,25 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Rootdir files
 ROOTDIR_FILES := \
-	$(LOCAL_PATH)/ramdisk/init.rc \
-	$(LOCAL_PATH)/ramdisk/init.board.rc \
-	$(LOCAL_PATH)/ramdisk/init.recovery.board.rc \
-	$(LOCAL_PATH)/ramdisk/init.sc8830.rc \
-	$(LOCAL_PATH)/ramdisk/init.sc8830.usb.rc \
-	$(LOCAL_PATH)/ramdisk/init.sc8830_ss.rc \
-	$(LOCAL_PATH)/ramdisk/init.j1pop3g.rc \
-	$(LOCAL_PATH)/ramdisk/init.j1pop3g_base.rc \
-	$(LOCAL_PATH)/ramdisk/init.wifi.rc \
-	$(LOCAL_PATH)/ramdisk/ueventd.sc8830.rc \
-	$(LOCAL_PATH)/ramdisk/fstab.sc8830
+	$(LOCAL_PATH)/rootdir/init.rc \
+	$(LOCAL_PATH)/rootdir/init.board.rc \
+	$(LOCAL_PATH)/rootdir/init.recovery.board.rc \
+	$(LOCAL_PATH)/rootdir/init.sc8830.rc \
+	$(LOCAL_PATH)/rootdir/init.sc8830.usb.rc \
+	$(LOCAL_PATH)/rootdir/init.sc8830_ss.rc \
+	$(LOCAL_PATH)/rootdir/init.j1pop3g.rc \
+	$(LOCAL_PATH)/rootdir/init.j1pop3g_base.rc \
+	$(LOCAL_PATH)/rootdir/init.wifi.rc \
+	$(LOCAL_PATH)/rootdir/ueventd.sc8830.rc \
+	$(LOCAL_PATH)/rootdir/fstab.sc8830
 
 PRODUCT_COPY_FILES += \
 	$(foreach f,$(ROOTDIR_FILES),$(f):root/$(notdir $(f)))
+#	$(LOCAL_PATH)/rootdir/recovery.fstab
+	 # media_profiles and media_codecs xmls for 8916
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/media_codecs.xml:system/etc/media_codecs.xml \
+    $(LOCAL_PATH)/prebuilts/media_profiles.xml:system/etc/media_profiles.xml
 
 # enable Google-specific location features,
 # like NetworkLocationProvider and LocationCollector

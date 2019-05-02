@@ -14,14 +14,12 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/samsung/j1pop3g/full_j1pop3g.mk)
+LOCAL_PATH := $(call my-dir)
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 800
-TARGET_SCREEN_WIDTH := 480
+ifeq ($(TARGET_DEVICE),j1pop3g)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+include $(call all-makefiles-under,$(LOCAL_PATH))
 
-PRODUCT_NAME := cm_j1pop3g
-PRODUCT_DEVICE := j1pop3g
+include $(CLEAR_VARS)
+
+endif

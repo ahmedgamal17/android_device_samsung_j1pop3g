@@ -179,10 +179,9 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_FLASH_FROM_STORAGE := true
 TW_NO_REBOOT_BOOTLOADER := true
-TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/platform/sec-thermistor/temperature"
-TWHAVE_SELINUX := true
 TARGET_RECOVERY_INITRC := device/samsung/j1pop3g/etc/init.rc
 TARGET_RECOVERY_FSTAB := device/samsung/j1pop3g/rootdir/recovery.fstab
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/platform/sec-thermistor/temperature"
 TW_HAS_DOWNLOAD_MODE := true
 DEVICE_RESOLUTION := 480x800
 TW_THEME := portrait_mdpi
@@ -191,3 +190,4 @@ BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_10x18.h\"
 # UMS
 BOARD_UMS_LUNFILE := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun/file"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun/file"
+
